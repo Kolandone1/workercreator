@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Update package list and install pip
-apt update
-apt install python
+# Update package list and install python
+pkg update && pkg upgrade
+pkg install -y python
 
 # Install requests module if not already installed
 pip install requests
-
+pkg install git
 # Clone your repository (replace with your actual repository URL)
 git clone https://github.com/Kolandone1/workercreator.git
 
