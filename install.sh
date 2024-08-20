@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Update package list and install pip
+apt update
+apt install python
+
+# Install requests module if not already installed
+pip install requests
+
+# Clone your repository (replace with your actual repository URL)
+git clone https://github.com/yourusername/workercreator.git
+
+# Navigate to the script directory
+cd workercreator
+
+# Make the Python script executable
+chmod +x kol.py
+
+# Create an alias to run the script with the 'koland' command
+echo "alias koland='python $(pwd)/kol.py'" >> ~/.bashrc
+
+# Apply the changes to the current session
+source ~/.bashrc
+
+echo "Installation complete. You can now run the script using the 'koland' command."
