@@ -8,7 +8,7 @@ apt install python
 pip install requests
 
 # Clone your repository (replace with your actual repository URL)
-git clone https://github.com/yourusername/workercreator.git
+git clone https://github.com/Kolandone1/workercreator.git
 
 # Navigate to the script directory
 cd workercreator
